@@ -256,17 +256,19 @@ def mostrar_todos (legajos, nombres, generos, p1, p2):
 
 
 # Calcular Promedio:
+
 def calcular_promedio(p1, p2):
     """
-Calcula el promedio de cada estudiante y los guarda en una nueva lista.
+    Calcula el promedio de cada estudiante y los guarda en una nueva lista
+    utilizando asignación por índice .
     """
-    lista_promedios = []
+    
+    lista_promedios = [0] * len(p1) 
+    
     for i in range(len(p1)):
-        promedio = round((p1[i] + p2[i]) / 2, 2)
-        lista_promedios.append(promedio)
-
+        
+        lista_promedios[i] = round((p1[i] + p2[i]) / 2, 2)
     return lista_promedios
-
 
 # Ordenanar por promedio
 def ordenar_por_promedio( legajos, nombres, generos, parcial1, parcial2, promedios, orden):

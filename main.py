@@ -1,10 +1,10 @@
 import funciones_validaciones
 def main ():
-    legajos = [101, 102, 103, 104]
-    nombres = ["Juan Perez", "Ana Gomez", "Mathias Eschenmoser", "Marian Maldonado"]
-    generos = ["M", "F", "M", "F"]
-    p1 = [8, 9, 4, 10]
-    p2 = [7, 10, 5, 4]
+    legajos = []
+    nombres = []
+    generos = []
+    p1 = []
+    p2 = []
     opcion = 0
     while opcion != 7:
         print("--- MENU---")
